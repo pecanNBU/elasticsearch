@@ -1,8 +1,8 @@
 # Bulk API
 
 The bulk API allows one to index and delete several documents in a single request. Here is a sample usage:
-'
-import static org.elasticsearch.common.xcontent.XContentFactory.*;
+
+`import static org.elasticsearch.common.xcontent.XContentFactory.*;
 
 BulkRequestBuilder bulkRequest = client.prepareBulk();
 
@@ -30,5 +30,4 @@ bulkRequest.add(client.prepareIndex("twitter", "tweet", "2")
 BulkResponse bulkResponse = bulkRequest.get();
 if (bulkResponse.hasFailures()) {
     // process failures by iterating through each bulk response item
-}
-'
+}`
