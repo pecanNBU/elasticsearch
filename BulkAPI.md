@@ -31,4 +31,5 @@ bulkRequest.add(client.prepareIndex("twitter", "tweet", "2")
 BulkResponse bulkResponse = bulkRequest.get();
 if (bulkResponse.hasFailures()) {
     // process failures by iterating through each bulk response item
-}```
+}
+```
