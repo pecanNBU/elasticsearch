@@ -1,6 +1,6 @@
 # Bulk API
 
-The bulk API allows one to index and delete several documents in a single request. Here is a sample usage:
+>The bulk API allows one to index and delete several documents in a single request. Here is a sample usage:
 
 ```
 import static org.elasticsearch.common.xcontent.XContentFactory.*;
